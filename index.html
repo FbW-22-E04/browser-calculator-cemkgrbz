@@ -12,97 +12,187 @@
     h1{
         width: fit-content;
     }
+
+    .header-bg {
+        background-color: rgb(253, 184, 9);
+    }
+    .divForms{
+        width: fit-content;
+        display: flex; 
+        margin: 3rem
+    }
+
+    .container {
+        width: fit-content;
+    }
 </style>
 <body>
-    <h1 class="mx-auto mt-5">CALCULATION X</h1>
-    <h4 class="ps-5 mt-5">Basic Arithmetic</h4>
+    <div class="header-bg">
+    <h1 class="mx-auto pt-5 pb-5">CALCULATION X</h1></div>
+    <div class="container">
+    <h4 class="ps-4 mt-5">Basic Arithmetic</h4>
 
-    <div class="row g-3 align-items-center d-flex m-3">
+    <div class="row g-3 align-items-center d-flex m-3 divForms">
 
         <div class="col-auto">
-          <input type="number" class="form-control">
+          <input id="sum1" type="number" class="form-control">
         </div>
-
-        <!-- <p>+</p> -->
-
+        +
         <div class="col-auto">
-            <input type="number" class="form-control">
+            <input id="sum2" type="number" class="form-control">
         </div>
-
+        =
         <div class="col-auto">
-            <input type="number" class="form-control">
-        </div>
-
-    </div>
-    <div class="row g-3 align-items-center d-flex m-3">
-
-        <div class="col-auto">
-          <input type="number" class="form-control">
-        </div>
-
-        <!-- <p>+</p> -->
-
-        <div class="col-auto">
-            <input type="number" class="form-control">
-        </div>
-
-        <div class="col-auto">
-            <input type="number" class="form-control">
+            <input id="sumResult" type="number" class="form-control" disabled >
         </div>
 
     </div>
     <div class="row g-3 align-items-center d-flex m-3">
 
         <div class="col-auto">
-          <input type="number" class="form-control">
-        </div>
-
-        <!-- <p>+</p> -->
+          <input id="sub1" type="number" class="form-control">
+        </div>-
 
         <div class="col-auto">
-            <input type="number" class="form-control">
+            <input id="sub2" type="number" class="form-control">
         </div>
-
+        =
         <div class="col-auto">
-            <input type="number" class="form-control">
+            <input id="subResult" type="number" class="form-control" disabled>
         </div>
 
     </div>
     <div class="row g-3 align-items-center d-flex m-3">
 
         <div class="col-auto">
-          <input type="number" class="form-control">
+          <input id="multi1" type="number" class="form-control">
         </div>
 
-        <!-- <p>+</p> -->
+        *
 
         <div class="col-auto">
-            <input type="number" class="form-control">
+            <input id="multi2" type="number" class="form-control">
         </div>
-
+        =
         <div class="col-auto">
-            <input type="number" class="form-control">
+            <input id="multiResult" type="number" class="form-control" disabled>
         </div>
 
     </div>
-    <h4 class="ps-5 mt-5">Special Operations</h4>
-    <p class="ps-5">Modulo</p>
     <div class="row g-3 align-items-center d-flex m-3">
 
         <div class="col-auto">
-          <input type="number" class="form-control">
+          <input id= "div1" type="number" class="form-control">
         </div>
 
-        <!-- <p>+</p> -->
+        /
 
         <div class="col-auto">
-            <input type="number" class="form-control">
+            <input id= "div2" type="number" class="form-control">
         </div>
-
+        =
         <div class="col-auto">
-            <input type="number" class="form-control">
+            <input id= "divResult" type="number" class="form-control" disabled>
         </div>
 
     </div>
+</div>
+<div class="container">
+    <h4 class="ps-4 mt-5">Special Operations</h4>
+    <p class="ps-4">Modulo</p>
+    <div class="row g-3 align-items-center d-flex m-3">
+
+        <div class="col-auto">
+          <input id="mod1" type="number" class="form-control">
+        </div>
+
+       %
+
+        <div class="col-auto">
+            <input id="mod2" type="number" class="form-control">
+        </div>
+        =
+        <div class="col-auto">
+            <input id="modResult" type="number" class="form-control" disabled>
+        </div>
+
+    </div>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      p {
+        display: inline-block;
+      }
+      div {
+        margin: 0.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Calculator</h1>
+    Addition -->
+
+    <!-- <div>
+      <input id="a1" type="number" placeholder="type a number" />
+      <p>+</p>
+
+      <input id="a2" type="number" placeholder="type a number" />
+      <p>=</p>
+      <input id="a3" value="0" disabled />
+    </div>
+Subtraction -->
+
+    <!-- <div>
+      <input id="s1" type="number" placeholder="type a number" />
+      <p>-</p>
+      <input id="s2" type="number" placeholder="type a number" />
+      <p>=</p>
+      <input id="s3" value="0" disabled />
+    </div> -->
+
+    <!-- Multiplication -->
+
+    <!-- <div>
+      <input id="m1" type="number" placeholder="type a number" />
+      <p>*</p>
+      <input id="m2" type="number" placeholder="type a number" />
+      <p>=</p>
+      <input id="m3" value="0" disabled />
+    </div> -->
+
+    <!-- Division -->
+
+    <!-- <div>
+      <input id="d1" type="number" placeholder="type a number" />
+      <p>/</p>
+      <input id="d2" type="number" placeholder="type a number" />
+      <p>=</p>
+      <input id="d3" value="0" disabled />
+    </div> -->
+
+    <!-- Modulo -->
+<!-- 
+    <div>
+      <input id="mod1" type="number" placeholder="type a number" />
+      <p>%</p>
+      <input id="mod2" type="number" placeholder="type a number" />
+      <p>=</p>
+      <input id="mod3" value="0" disabled />
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html> -->
